@@ -18,3 +18,5 @@ chkconfig httpd on
 aws s3 cp s3://firststaticwebsite-s3bucket/source/ /var/www/html/ --region us-west-2
 
 echo ".... server installation finished"
+
+#we are using this script for auto-scaling EC2 instances
