@@ -15,7 +15,7 @@ service httpd start
 chkconfig httpd on
 
 # download file from s3 into the region in which this ec2 instance is
-aws s3 cp s3://firststaticwebsite-s3bucket/source/ /var/www/html/ --region us-west-2
+aws s3 cp --recursive s3://firststaticwebsite-s3bucket/source/ /var/www/html/ --region us-west-2
 
 echo ".... server installation finished"
 
